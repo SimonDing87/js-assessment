@@ -85,7 +85,7 @@ exports.arraysAnswers = {
     var sorted = arr.sort();
     for (var i = 0; i < sorted.length; i++) {
       if (sorted[i] === sorted[i+1] && dupes.indexOf(sorted[i]) === -1) {
-        dupes.push(sorted[i])
+        dupes.push(sorted[i]);
       }
     }
     return dupes;
