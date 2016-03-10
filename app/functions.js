@@ -35,11 +35,12 @@ exports.functionsAnswers = {
   },
 
   callIt : function(fn) {
-
+    var argsArray = Array.prototype.slice.call(arguments).slice(1);
+    return fn.apply(this, argsArray);
   },
 
   partialUsingArguments : function(fn) {
-
+    
   },
 
   curryIt : function(fn) {
